@@ -11,6 +11,8 @@ import android.widget.GridView;
 public class MainActivity extends AppCompatActivity {
     Button navGrid;
     Button navFrag;
+    Button navConst;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DialogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        navConst = (Button) findViewById(R.id.buttonConstraint);
+        navConst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ConstraintActivity.class);
                 startActivity(intent);
             }
         });

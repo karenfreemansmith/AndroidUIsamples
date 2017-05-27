@@ -14,8 +14,20 @@
         android:text="Grid View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonGridView" />
-
+        android:id="@+id/buttonGridView"
+        android:layout_below="@+id/buttonDialogFragment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp"/>
+    <Button
+        android:text="Constraint Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonConstraint"
+        android:layout_below="@+id/buttonGridView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"/>
     <Button
         android:text="Dialog Fragment"
         android:layout_width="wrap_content"
